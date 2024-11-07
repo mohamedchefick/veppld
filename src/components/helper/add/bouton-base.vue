@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 // import { SpringSpinner } from 'epic-spinners'
-import IconArrowLeft from '@/assets/icons/IconArrowLeft.vue'
 
 const props = defineProps({
   label: {
@@ -31,11 +30,6 @@ const props = defineProps({
   radius: {
     type: String,
     default: '8px'
-  },
-  icon: {
-    type: Object,
-    default: IconArrowLeft,
-    required: false
   },
   charge: {
     type: Boolean,
@@ -83,9 +77,7 @@ function handleMouseLeave() {
           >{{ label }}</span
         >
         <!-- <spring-spinner v-if="charge" :animation-duration="3000" :size="30" :color="spinColor" /> -->
-        <div v-if="icon && !charge">
-          <component :is="icon" class="IconArrowLeft ml-2 2xl:ml-3" />
-        </div>
+        
       </div>
     </div>
   </main>

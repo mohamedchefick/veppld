@@ -1,171 +1,141 @@
-<script setup>
-import IconLogo from '@/assets/icons/IconLogo.vue'
-import IconGoUp from '@/assets/icons/IconGoUp.vue'
-import { ref, onMounted } from 'vue'
-import { useRouter } from 'vue-router'
-import { useUserStore } from '@/stores/index'
-const store = useUserStore()
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-gsap.registerPlugin(ScrollTrigger)
+<script>
+// import IconLogo from '@/assets/icons/IconLogo.vue';
+import IconGoUp from '@/assets/icons/IconGoUp.vue';
+import iconOrganiz from '@/assets/icons/iconOrganiz.vue';
+import iconVerificat from '@/assets/icons/iconVerificat.vue';
+import iconCarte from '@/assets/icons/iconCarte.vue';
+import SvgIcon from '../add/SvgIcon.vue';
+import IMGLogo from '@/assets/images/IMGveepLogo.webp'
 
-const props = defineProps({
-  isHome: {
-    type: Boolean,
-    default: false
-  }
-})
-
-onMounted(() => {
-  const topButton = document.querySelector('.goTop')
-  gsap.from(topButton, {
-    scrollTrigger: {
-      trigger: topButton,
-      toggleActions: 'restart reverse play reverse',
-      start: 'top -200%',
-      markers: false,
-      scrub: 5
+export default {
+  name: 'TheHeader', // Le nom du composant doit être en PascalCase
+  components: {
+    IconGoUp,
+    SvgIcon,
+    iconOrganiz,
+    iconVerificat,
+    iconCarte,
+  },
+  data() {
+    return {
+      isMenu: false, // État pour contrôler l'affichage du menu mobile
+      images:{IMGLogo}
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenu = !this.isMenu; // Alterne l'affichage du menu mobile
     },
-    y: 100,
-    opacity: 0,
-    scale: 0,
-    ease: 'elastic.out(0.4,0.15)',
-    duration: 2
-  })
-})
-
-const isMenu = ref(false)
-function closeMenu() {
-  isMenu.value = false
-}
-function openMenu() {
-  isMenu.value = true
-}
-
-const isAllProduct = ref(false)
-function closeAllProduct() {
-  isAllProduct.value = false
-}
-function openAllProduct() {
-  isAllProduct.value = true
-}
-
-function openLogin() {
-  isMenu.value = false
-  window.open('https://app.oremi.41devs.co/', '_blank')
-}
-
-const router = useRouter()
-function openHome() {
-  if (router.currentRoute.value.path === '/') {
-    window.location.reload()
-  } else {
-    router.push('/')
-  }
-}
-
-function openWhatsApp() {
-  isMenu.value = false
-  window.open(' https://wa.me/22963632828', '_blank')
-}
-
-const route = useRouter()
-function scrollTo(val) {
-  // Vérifier si on est sur une autre page
-  if (route.currentRoute.value.path !== '/') {
-    // Rediriger vers la page d'accueil avec l'ID en ancre
-    router.push({ path: '/', hash: `#${val}` }).then(() => {
-      // Après la navigation, on s'assure que l'ancre est bien scrollée
-      setTimeout(() => {
-        const element = document.getElementById(val)
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' })
-        }
-      }, 300) // Petit délai pour s'assurer que la page est bien chargée
-    })
-  } else {
-    // Si on est déjà sur la page d'accueil
-    const element = document.getElementById(val)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-}
+  },
+};
 </script>
+
 
 <template>
   <main>
+    <!-- Barre de navigation principale -->
     <div
       v-if="!isMenu"
-      class="bg-[#FFFFFF17] flex justify-between items-center py-3.5 px-5 md:px-32 lg:px-44 2xl:px-56"
-    >
+      class="bg-white/70 backdrop-blur-lg flex justify-between items-center py-5 px-5 sm:px-8 md:px-16 lg:px-32 xl:px-36 2xl:px-56"    >
+      <!-- Logo (gauche) -->
       <div class="cursor-pointer" @click="openHome">
-        <IconLogo />
+        <img :src="images.IMGLogo" class="w-32" alt="">
       </div>
 
+      <!-- Icône Burger (visible uniquement sur petits écrans) -->
+      <div class="block md:hidden cursor-pointer" @click="toggleMenu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-7"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </div>
+
+      <!-- Liens de navigation (cachés sur petits écrans) -->
       <div
-        class="hidden md:flex items-center font-medium xl:text-base 2xl:text-xl text-black gap-5"
+        class="hidden md:flex items-center font-medium gap-3 xl:text-base 2xl:text-xl text-black"
       >
         <div
-          class="font-normal text-xl 2xl:text-2xl text-[#584175] cursor-pointer"
+          class="font-normal text-sm sm:text-base  2xl:text-2xl cursor-pointer flex items-center gap-2  hover:bg-[#FBE4D680] lg:py-2 lg:px-4 rounded-lg"
           @click="scrollTo('faq')"
         >
-          {{ $t('expertise') }}
+          <iconCarte icon-name="iconCarte" class="w-4 sm:w-5" />
+          {{ $t('La Carte VEEP') }}
         </div>
         <div
-          class="font-normal text-xl 2xl:text-2xl text-[#584175] cursor-pointer"
+          class="font-normal text-sm sm:text-base  2xl:text-2xl cursor-pointer flex items-center gap-2 hover:bg-[#FBE4D680] lg:py-2 lg:px-4 rounded-lg"
           @click="contact"
         >
-          {{ $t('industries') }}
+          <iconVerificat icon-name="iconCarte" class="w-4 sm:w-5" />
+          {{ $t('Vérifier un billet') }}
         </div>
-      </div>
-      <div class="md:flex items-center gap-2.5">
-        <div>
-          <button
-            class="font-medium text-white text-sm xl:text-base 2xl:text-lg bg-bluePrincipal px-5 py-2 lg:px-6 lg:py-2.5 2xl:px-7 2xl:py-3.5 rounded-xl"
-            @click="openAllProduct"
-          >
-            {{ $t('contactUs') }}
-          </button>
+        <div
+          class="font-normal text-sm sm:text-base  2xl:text-2xl cursor-pointer flex items-center gap-2 hover:bg-[#FBE4D680] lg:py-2 lg:px-4 rounded-lg"
+          @click="contact"
+        >
+          <iconOrganiz icon-name="iconCarte" class="w-4 sm:w-5" />
+          {{ $t('Organisateurs') }}
         </div>
       </div>
     </div>
 
-    <!-- MENU -->
-    <div class="absolute w-full h-screen bg-white" v-if="isMenu">
-      <div class="w-full bg-white p-8 2xl:p-20">
-        <div class="cursor-pointer" @click="openHome">
-          <IconLogo />
+    <!-- Menu Mobile (visible uniquement lorsque isMenu est true) -->
+    <div v-if="isMenu" class="absolute w-full h-screen bg-white z-50 pt-32">
+      <div class="flex justify-center items-center p-5">
+        <SvgIcon icon-name="IconMenu" class="w-4 text-black" color=""  @click="openHome" />
+        <!-- Bouton pour fermer le menu -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 text-black cursor-pointer bg-[#38B4B41A] rounded-full p-1"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          @click="toggleMenu"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+      <!-- Liens de navigation pour mobile -->
+      <div class="flex flex-col justify-center items-center p-5 space-y-5 text-black text-xl">
+        <div @click="scrollTo('faq')" class="cursor-pointer flex items-center gap-3">
+          <iconCarte icon-name="iconCarte" class="w-4 sm:w-5" />
+          {{ $t('La Carte VEEP') }}
         </div>
-        <div class="font-medium text-xl text-black space-y-5">
-          <div @click="scrollTo('faq')">
-            {{ $t('help') }}
-          </div>
-          <div @click="contact">
-            {{ $t('contacts') }}
-          </div>
-          <div class="flex gap-1" @click="openLogin">
-            <IconUser />
-            {{ $t('login') }}
-          </div>
-          <div class="flex w-full pt-10">
-            <button
-              class="font-medium text-white text-sm xl:text-base 2xl:text-lg bg-bluePrincipal px-5 py-2 lg:px-6 lg:py-2.5 2xl:px-7 2xl:py-3.5 rounded-xl"
-              @click="openAllProduct"
-            >
-              {{ $t('contactUs') }}
-            </button>
-          </div>
+        <div @click="contact" class="cursor-pointer flex items-center gap-3">
+          <iconVerificat icon-name="iconCarte" class="w-4 sm:w-5" />
+          {{ $t('Vérifier un billet') }}
+        </div>
+        <div @click="contact" class="cursor-pointer flex items-center gap-3">
+          <iconOrganiz icon-name="iconCarte" class="w-4 sm:w-5" />
+          {{ $t('Organisateurs') }}
         </div>
       </div>
     </div>
-    <div
-      class="goTop bottom-14 md:bottom-24 right-8 md:right-16 fixed shadow-xl rounded-full"
+
+    <!-- Bouton "Go to Top" (visible à partir de sm) -->
+    <!-- <div
+      class="goTop hidden sm:block bottom-14 md:bottom-24 right-8 md:right-16 fixed shadow-xl rounded-full"
       @click.stop="scrollTo('header')"
     >
       <IconGoUp alt="IconGoUp" class="rounded-full" />
-    </div>
+    </div> -->
   </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* Ajoutez ici les styles spécifiques à ce composant si nécessaire */
+</style>
