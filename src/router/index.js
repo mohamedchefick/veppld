@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/home/index.vue'
 import DetailsEvents from '../views/detailsEvents/index.vue'
+import webCards from '../views/webCards/index.vue'
+
 
 
 const routes = [
@@ -13,6 +15,11 @@ const routes = [
     path: '/detailsevents',
     name: 'detailsevents',
     component: DetailsEvents
+  },
+  {
+    path: '/webCards',
+    name: 'webCards',
+    component: webCards
   },
   {
     path: '/:pathMatch(.*)*',
