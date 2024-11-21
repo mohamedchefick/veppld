@@ -66,7 +66,7 @@ export default {
     </div>
 
     <!-- Responsive Section with v-for for the Cards -->
-    <div class="flex flex-wrap justify-center md:justify-between pt-10 gap-4 md:gap-8 lg:gap-14">
+    <div class="flex flex-wrap justify-center  pt-10 gap-4 md:gap-8 lg:gap-12">
       <div
         v-for="(card, index) in cards"
         :key="index"

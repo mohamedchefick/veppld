@@ -65,7 +65,7 @@ export default {
       </div>
     </div>
     <div class="flex flex-col md:flex-row justify-between 2xl:-mt-9">
-      <div class="hidden md:flex w-2/5 items-center -ml-24 2xl:-ml-40 -mb-24 2xl:-mb-40">
+      <div class="hidden md:flex w-2/5  items-center -ml-24 2xl:-ml-40 -mb-24 2xl:-mb-40">
         <div>
           <div class="absolute md:ml-20 lg:ml-36 -mt-7 iconlove">
             <!-- <ICLove class="md:w-14 lg:w-20"/> -->

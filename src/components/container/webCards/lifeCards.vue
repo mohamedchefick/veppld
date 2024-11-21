@@ -40,7 +40,7 @@ export default {
         <img
           :src="IMGLife"
           alt="IMGcard"
-          class="w-72 ml- md:ml-0 h-48 sm:w-56 sm:h-56 lg:w-[400px] xl:w-[558.5px] lg:h-[400px] xl:h-[478.5px]"
+          class="w-72 ml- md:ml-4 h-48 sm:w-56 sm:h-56 lg:w-[400px] xl:w-[558.5px] lg:h-[400px] xl:h-[478.5px]"
         />
         <iconEtoile class="md:ml-3 md:mt-4 hidden sm:block" />
         <iconEtoile2 class=" md:mt-2 hidden sm:block" />

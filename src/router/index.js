@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/home/index.vue'
 import DetailsEvents from '../views/detailsEvents/index.vue'
 import webCards from '../views/webCards/index.vue'
+import webOrganizer from '../views/webOrganizer/index.vue'
+
 
 
 
@@ -20,6 +22,11 @@ const routes = [
     path: '/webCards',
     name: 'webCards',
     component: webCards
+  },
+  {
+    path: '/webOrganizer',
+    name: 'webOrganizer',
+    component: webOrganizer
   },
   {
     path: '/:pathMatch(.*)*',

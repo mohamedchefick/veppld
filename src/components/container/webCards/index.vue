@@ -4,6 +4,13 @@ import Footer from '@/components/helper/footer/index.vue'
 import HeroCards from '@/components/container/webCards/heroCards.vue'
 import LifeCards from '@/components/container/webCards/lifeCards.vue'
 import PrivilegeCards from '@/components/container/webCards/privilegeCards.vue'
+import PointCards from '@/components/container/webCards/pointCards.vue'
+import AppCards from '@/components/container/webCards/appCards.vue'
+import GetCards from '@/components/container/webCards/getCards.vue'
+import GoCards from '@/components/container/webCards/goCards.vue'
+import PartnersCards from '@/components/container/webCards/partnersCards.vue'
+
+
 import interestingEvents from '../home/interestingEvents.vue'
 
 import { ref } from 'vue'
@@ -29,6 +36,21 @@ ex.value = 0
         </div>
         <div class="">
           <PrivilegeCards />
+        </div>
+        <div class="mt-20">
+          <PointCards />
+        </div>
+        <div class="">
+          <AppCards />
+        </div>
+        <div class="">
+          <GetCards />
+        </div>
+        <div class="mt-10">
+          <GoCards />
+        </div>
+        <div class="md:pb-20">
+          <PartnersCards />
         </div>
         <div class="">
           <interestingEvents />
