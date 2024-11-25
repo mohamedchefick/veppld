@@ -3,6 +3,8 @@ import HomeView from '../views/home/index.vue'
 import DetailsEvents from '../views/detailsEvents/index.vue'
 import webCards from '../views/webCards/index.vue'
 import webOrganizer from '../views/webOrganizer/index.vue'
+import webTicket from '../views/webTicket/index.vue'
+
 
 
 
@@ -27,6 +29,11 @@ const routes = [
     path: '/webOrganizer',
     name: 'webOrganizer',
     component: webOrganizer
+  },
+  {
+    path: '/webTicket',
+    name: 'webTicket',
+    component: webTicket
   },
   {
     path: '/:pathMatch(.*)*',
