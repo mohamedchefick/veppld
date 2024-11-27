@@ -58,7 +58,7 @@ export default {
       </div>
 
       <div
-        class="text-lg mx-auto text-center font-normal w-11/12 md:w-1/3 py-5 pt-10 md:pt-1 text-[#515151]"
+        class="text-lg mx-auto text-center font-normal w-11/12 md:w-5/12 py-5 pt-10 md:pt-1 text-[#515151]"
       >
         Rejoignez le monde des privilèges avec la carte VEEP et profitez des nombreux avantages chez
         nos partenaires.

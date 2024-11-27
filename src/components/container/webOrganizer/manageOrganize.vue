@@ -15,7 +15,7 @@ export default {
 
 <template>
   <div class="py-5 px-5 sm:px-8 md:px-16 lg:px-32 xl:px-36 2xl:px-56">
-    <div class="w-full md:h-[513.75px] rounded-3xl bg-[#FEF9F2] mt-8 relative overflow-hidden">
+    <div class="w-full md:h-[513.75px] 2xl:h-[650px] rounded-3xl bg-[#FEF9F2] mt-8 relative overflow-hidden">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 items-center mt-10">
         <!-- Right Section mobile -->
         <div class="block md:hidden text-center">
@@ -45,7 +45,7 @@ export default {
         </div>
         <!-- Left Section -->
         <div class="p-5 md:p-8 flex flex-col items-center md:items-start justify-center">
-          <div class="flex flex-wrap gap-2 mt-4 justify-center md:ml-5">
+          <div class="flex flex-wrap gap-2 2xl:gap-5 mt-4 justify-center md:ml-5 2xl:ml-12">
             <div class="px-4 py-1 bg-white rounded-full font-normal text-sm md:text-base">
               Staff
             </div>
@@ -62,9 +62,7 @@ export default {
               <iconManage1 class="w-5 h-5 mt-1 ml-3 hidden md:block" />
             </div>
           </div>
-          <div class="w-full max-w-md ">
-            <img :src="IMGManage2" alt="IMGcard" class="rounded-lg w-[441.75px] h-[299.04px]" />
-          </div>
+            <img :src="IMGManage2" alt="IMGcard" class="rounded-lg w-[441.75px] h-[299.04px] 2xl:w-full 2xl:h-auto" />
           <iconManageleeds class="mt-1 md:mr-80 mr-64" />
         </div>
         <!-- Right Section -->

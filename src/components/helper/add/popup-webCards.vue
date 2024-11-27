@@ -5,7 +5,7 @@
       <div>
         <button
           @click="$emit('close')"
-          class="flex justify-start ml-14 mt-10 absolute cursor-pointer"
+          class="flex justify-start ml-5 md:ml-14 mt-10 absolute cursor-pointer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,22 +23,22 @@
       <div class="flex flex-1 flex-col lg:flex-row justify-between mx-auto">
         <!-- Section gauche -->
         <div
-          class="text-center lg:text-left w-full lg:w-[749px] h-auto lg:h-full flex flex-col justify-center p-6 lg:ml-12"
+          class="text-center lg:text-left w-full lg:w-[749px] h-auto lg:h-full flex flex-col justify-center p-6 lg:ml-12 mt-10"
         >
           <h1 class="font-Baloo font-extrabold text-4xl lg:text-6xl leading-tight">
             Téléchargez l’application
           </h1>
-          <p class="text-lg lg:text-xl text-[#515151] mt-4">
+          <p class="text-lg lg:text-xl text-[#515151] mt-0 md:mt-4">
             Obtenez votre carte VEEP en téléchargeant l’application.
           </p>
-          <div class="flex gap-4 justify-center lg:justify-start mt-6">
+          <div class="flex gap-4 justify-center lg:justify-start mt-1 md:mt-6">
             <iconGoogleplay class="w-36 md:w-40 lg:w-52 h-12 md:h-16" />
             <iconAppstore class="w-36 md:w-40 lg:w-52 h-12 md:h-16" />
           </div>
         </div>
 
         <!-- Section droite -->
-        <div class="w-full lg:w-[486px] flex items-end p-5 md:p-0">
+        <div class="w-full lg:w-[486px] flex items-end px -5 md:p-0">
           <img :src="IMGpop" alt="App Veep" class="w-full lg:w-[486px] h-auto object-contain" />
         </div>
       </div>
