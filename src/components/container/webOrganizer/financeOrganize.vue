@@ -40,21 +40,19 @@ export default {
           <button
             class="px-4 py-2 text-[#38B4B4] font-medium text-sm md:text-base bg-[#38B4B412] rounded-full"
           >
-            Après l’évènement
+            {{ $t('afterEvenement') }}
           </button>
           <h2 class="text-3xl md:text-2xl lg:text-3xl font-bold mt-3 md:mt-4">
-            Point financier et données participants mis à disposition
+            {{ $t('pointFinance') }}
           </h2>
           <p class="text-sm md:text-base mt-2 md:mt-3 max-w-xs mx-auto md:mx-0">
-            Visualisez en temps réel sur votre tableau de bord personnel le point de vos recettes de
-            ventes de tickets. Accédez également à la base de données des participants à votre
-            évenement.
+            {{ $t('visualizeFinance') }}
           </p>
           <div class="mt-4 flex justify-center md:justify-start">
             <button
               class="bg-[#FF6B00] flex items-center justify-between gap-3 w-[235.25px] h-[50px] md:w-auto max-w-xs py-3 px-6 rounded-full text-white font-medium"
             >
-              <span>Accéder à l’espace</span>
+              <span>{{ $t('access') }}</span>
               <div
                 class="flex justify-center bg-white w-6 h-6 md:w-8 md:h-8 rounded-full items-center"
               >

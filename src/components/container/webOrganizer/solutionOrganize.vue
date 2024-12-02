@@ -43,32 +43,39 @@ export default {
               <button
                 class="bg-gradient-to-r from-[#999999] to-[#FFFFFF] rounded-full w-40 h-10 font-normal text-sm md:text-base text-white border border-white"
               >
-                Avant l’évènement
+                {{ $t('beforeEvenement') }}
               </button>
             </div>
-            <div class="w-full md:w-[375px] h-auto md:h-[75px] font-bold text-2xl md:text-3xl font-Baloo text-white mt-5 text-center md:text-start">
-              Création de vos évènements sur Veep
+            <div
+              class="w-full md:w-[375px] h-auto md:h-[75px] font-bold text-2xl md:text-3xl font-Baloo text-white mt-5 text-center md:text-start"
+            >
+              {{ $t('createEvenement') }}
             </div>
-            <div class="w-full md:w-[362.25px] h-auto md:h-[75px] font-normal text-sm md:text-base text-white mt-5 text-center md:text-start">
-              Fournissez le maximum d’informations sur votre évènement, partagez le lien avec vos
-              proches et sur les réseaux sociaux.
+            <div
+              class="w-full md:w-[362.25px] h-auto md:h-[75px] font-normal text-sm md:text-base text-white mt-5 text-center md:text-start"
+            >
+              {{ $t('send') }}
             </div>
             <div class="flex flex-col md:flex-row gap-3">
-              <div class="w-full md:w-[423px] h-auto md:h-[72px] bg-white flex gap-3 rounded-3xl items-center mt-5 p-3 md:p-0">
+              <div
+                class="w-full md:w-[423px] h-auto md:h-[72px] bg-white flex gap-3 rounded-3xl items-center mt-5 p-3 md:p-0"
+              >
                 <iconSolutionping class="w-[51px] h-[51px] ml-0 md:ml-3" />
-                <div class="w-auto md:w-[247.5px] h-auto font-normal text-sm md:text-base text-[#515151]">
-                  Vous êtes notifié de chaque ticket vendu et en temps réel.
+                <div
+                  class="w-auto md:w-[247.5px] h-auto font-normal text-sm md:text-base text-[#515151]"
+                >
+                  {{ $t('notify') }}
                 </div>
               </div>
               <div class="flex justify-center md:justify-start mt-3 md:mt-0 hidden md:flex">
                 <iconSolutionping2 class="w-[43.5px] h-[43.5px]" />
               </div>
             </div>
-            <div class="w-[235.25px] h-auto  mt-3 md:mt-4 m-auto md:m-0">
+            <div class="w-[235.25px] h-auto mt-3 md:mt-4 m-auto md:m-0">
               <button
                 class="bg-[#FF6B00] flex items-center justify-center gap-4 md:gap-10 w-full md:w-[235.25px] h-[50.25px] rounded-full m-auto"
               >
-                <h1 class="text-white font-medium text-sm md:text-base">Accéder à l’espace</h1>
+                <h1 class="text-white font-medium text-sm md:text-base">{{ $t('access') }}</h1>
                 <div
                   class="flex justify-center bg-white w-6 h-6 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full items-center"
                 >

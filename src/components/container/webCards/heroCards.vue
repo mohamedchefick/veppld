@@ -60,8 +60,7 @@ export default {
       <div
         class="text-lg mx-auto text-center font-normal w-11/12 md:w-5/12 py-5 pt-10 md:pt-1 text-[#515151]"
       >
-        Rejoignez le monde des privilèges avec la carte VEEP et profitez des nombreux avantages chez
-        nos partenaires.
+        {{ $t('joinVeep') }}
       </div>
     </div>
     <div class="flex flex-col md:flex-row justify-between 2xl:-mt-9">
@@ -106,7 +105,7 @@ export default {
               class="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-44 h-10 md:w-64 md:h-12 bg-white flex items-center justify-center text-black font-semibold shadow-md rounded-full md:mb-20 md:-ml-32 -ml-5 mb-10 gap-2 md:gap-5"
             >
               <button class="font-medium text-xs md:text-base text-[#000000]">
-                Découvrir les avantages
+                {{ $t('advantage') }}
               </button>
               <div
                 class="bg-[#FF6B00] rounded-full h-6 w-6 md:h-9 md:w-9 flex items-center justify-center"

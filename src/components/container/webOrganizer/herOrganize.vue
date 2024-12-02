@@ -30,17 +30,16 @@ export default {
     <div class="flex flex-col items-center text-center mt-10 md:mb-20 md:mr-28">
       <div>
         <div class="w-full md:w-[684px] h-auto font-Baloo font-bold text-4xl md:text-6xl">
-          Transformez vos évènements en succès avec Veep
+          {{ $t('transformEvenement') }}
         </div>
         <div class="w-full md:w-[575px] h-auto font-normal text-base md:text-lg mt-4 m-auto">
-          Proposez la meilleure expérience à vos participants avec nos solutions de billetterie en
-          ligne et de contrôle d’accès.
+          {{ $t('proposition') }}
         </div>
         <div class="w-full md:w-[217px] h-auto mt-5 m-auto">
           <button
             class="bg-[#FF6B00] flex items-center justify-center gap-4 md:gap-10 w-[219px] md:w-[217px] h-12 md:h-[50.25px] rounded-full m-auto"
           >
-            <h1 class="text-white font-medium text-sm md:text-base">Contactez-nous</h1>
+            <h1 class="text-white font-medium text-sm md:text-base">{{ $t('contact') }}</h1>
             <div
               class="flex justify-center bg-white w-6 h-6 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full items-center"
             >
@@ -66,4 +65,3 @@ export default {
   background-position: center;
 }
 </style>
-

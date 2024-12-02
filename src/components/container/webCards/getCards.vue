@@ -40,7 +40,7 @@ export default {
       <div
         class="md:text-5xl text-4xl mx-auto text-center py-6 2xl:pt-24 sm:pt-16 font-bold text-black w-[353px] h-[90px] md:w-[597.75px] md:h-[90px]"
       >
-        Comment Obtenir Votre Carte VEEP?
+        {{ $t('getCards') }}
       </div>
     </div>
     <div class="flex flex-col md:flex-row justify-center items-center">
@@ -58,9 +58,9 @@ export default {
               class="bg-[#FCF5EB] w-[342px] h-[163.5px] rounded-3xl rounded-r-none rounded-b-3xl flex justify-center items-center mb-5"
             >
               <div>
-                <div class="w-64 h-11 font-Baloo font-bold text-2xl">Télécharger l’app Veep</div>
+                <div class="w-64 h-11 font-Baloo font-bold text-2xl">{{ $t('downLoad') }}</div>
                 <div class="w-64 h-12 font-normal text-base">
-                  Téléchargez l’app mobile via playstore ou app store
+                  {{ $t('downloadApp') }}
                 </div>
               </div>
             </div>
@@ -95,9 +95,9 @@ export default {
               class="bg-[#FCF5EB] w-[342px] h-[163.5px] rounded-3xl rounded-b-3xl rounded-l-none flex justify-center items-center mb-8"
             >
               <div>
-                <div class="w-72 h-11 font-Baloo font-bold text-2xl">Commander la carte Veep</div>
+                <div class="w-72 h-11 font-Baloo font-bold text-2xl">{{ $t('commandCard') }}</div>
                 <div class="w-64 h-12 font-normal text-base">
-                  Lancez la commande de votre carte sur l’app et faites-vous livrer.
+                  {{ $t('launchCommand') }}
                 </div>
               </div>
             </div>
@@ -109,10 +109,10 @@ export default {
             >
               <div>
                 <div class="w-72 h-11 font-Baloo font-bold text-2xl">
-                  Lier la carte Veep à l’app
+                  {{ $t('bindApp') }}
                 </div>
                 <div class="w-64 h-12 font-normal text-base">
-                  Liez à présent votre carte à votre application pour la rendre active
+                  {{ $t('bindCard') }}
                 </div>
               </div>
             </div>
@@ -146,10 +146,9 @@ export default {
               class="bg-[#FCF5EB] w-[342px] h-[163.5px] rounded-3xl rounded-b-3xl rounded-l-none flex justify-center items-center"
             >
               <div>
-                <div class="h-11 font-Baloo font-bold text-2xl">Profiter de la carte Veep</div>
+                <div class="h-11 font-Baloo font-bold text-2xl">{{ $t('enjoyCard') }}</div>
                 <div class="w-64 h-20 font-normal text-base">
-                  Utilisez maintenant la carte pour les événements, gagnez des points et bénéficiez
-                  d’avantages.
+                  {{ $t('useCard') }}
                 </div>
               </div>
             </div>
@@ -165,21 +164,18 @@ export default {
               <div
                 class="w-9 h-9 rounded-full bg-[#38B4B4] font-Baloo font-bold text-lg flex justify-center items-center text-white mb-2"
               >
-                <!-- Réduction de la taille -->
                 1
               </div>
               <div class="border-l h-[89.68px] bg-[#38B4B4] w-1"></div>
-              <!-- Réduction de la hauteur -->
             </div>
             <div
               class="bg-[#FCF5EB] w-[308px] h-[145px] rounded-3xl rounded-l-none rounded-b-3xl flex justify-center items-center py-3 px-4 -mt-7"
             >
-              <!-- Ajout de padding -->
               <div>
-                <div class="w-64 h-8 font-Baloo font-bold text-lg">Télécharger l’app Veep</div>
+                <div class="w-64 h-8 font-Baloo font-bold text-lg">{{ $t('downLoad') }}</div>
                 <!-- Réduction de la taille -->
                 <div class="w-64 h-10 font-normal text-sm">
-                  Téléchargez l’app mobile via Play Store ou App Store
+                  {{ $t('downloadApp') }}
                 </div>
                 <!-- Réduction de la taille -->
               </div>
@@ -201,10 +197,10 @@ export default {
             >
               <!-- Ajout de padding -->
               <div>
-                <div class="w-64 h-8 font-Baloo font-bold text-lg">Commander la carte Veep</div>
+                <div class="w-64 h-8 font-Baloo font-bold text-lg">{{ $t('commandCard') }}</div>
                 <!-- Réduction de la taille -->
                 <div class="w-64 h-10 font-normal text-sm">
-                  Lancez la commande de votre carte sur l’app et faites-vous livrer.
+                  {{ $t('launchCommand') }}
                 </div>
                 <!-- Réduction de la taille -->
               </div>
@@ -226,10 +222,10 @@ export default {
             >
               <!-- Ajout de padding -->
               <div>
-                <div class="w-64 h-8 font-Baloo font-bold text-lg">Lier la carte Veep à l’app</div>
+                <div class="w-64 h-8 font-Baloo font-bold text-lg">{{ $t('bindApp') }}</div>
                 <!-- Réduction de la taille -->
                 <div class="w-64 h-10 font-normal text-sm">
-                  Liez à présent votre carte à votre application pour la rendre active
+                  {{ $t('bindCard') }}
                 </div>
                 <!-- Réduction de la taille -->
               </div>
@@ -250,13 +246,10 @@ export default {
             >
               <!-- Ajout de padding -->
               <div>
-                <div class="w-64 h-8 font-Baloo font-bold text-lg">Profiter de la carte Veep</div>
-                <!-- Réduction de la taille -->
+                <div class="w-64 h-8 font-Baloo font-bold text-lg">{{ $t('enjoyCard') }}</div>
                 <div class="w-64 h-10 font-normal text-sm">
-                  Utilisez maintenant la carte pour les événements, gagnez des points et bénéficiez
-                  d’avantages.
+                  {{ $t('useCard') }}
                 </div>
-                <!-- Réduction de la taille -->
               </div>
             </div>
           </div>
@@ -266,7 +259,7 @@ export default {
       <div class="hidden md:flex items-center md:relative md:-mt-40">
         <iconApl2 class="w-full -mr-36" />
 
-        <iconApl3 class=" mt-[1000px]" />
+        <iconApl3 class="mt-[1000px]" />
       </div>
     </div>
   </div>

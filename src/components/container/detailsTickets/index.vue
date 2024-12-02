@@ -2,6 +2,7 @@
 import Header from '@/components/helper/header/index.vue'
 import Footer from '@/components/helper/footer/index.vue'
 import Detail from '@/components/container/detailsTickets/ticketDetails.vue'
+import Download from '@/components/container/detailsTickets/download.vue'
 
 import { ref } from 'vue'
 
@@ -20,6 +21,9 @@ ex.value = 0
       <div class="pt-20 text-black">
         <div>
           <Detail class="" />
+        </div>
+        <div>
+          <Download class="" />
         </div>
         <div class="">
           <Footer />

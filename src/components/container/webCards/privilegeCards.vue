@@ -85,7 +85,7 @@ export default {
           </div>
         </div>
         <div class="flex items-center gap-3 mt-4">
-          <div class="text-[#E15F00] font-medium text-sm">Commander votre carte</div>
+          <div class="text-[#E15F00] font-medium text-sm"> {{ $t('commandVeep') }}</div>
           <iconGdirection />
         </div>
       </div>

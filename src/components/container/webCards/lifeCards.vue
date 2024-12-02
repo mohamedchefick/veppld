@@ -32,7 +32,7 @@ export default {
         Vivez des Expériences
         <span class="text-[#FF6B00] font-bold font-Baloo">Inoubliables</span>
       </div>
-              <iconEtoile2 class="ml-32 block md:hidden" />
+      <iconEtoile2 class="ml-32 block md:hidden" />
 
       <!-- -->
 
@@ -43,7 +43,7 @@ export default {
           class="w-72 ml- md:ml-4 h-48 sm:w-56 sm:h-56 lg:w-[400px] xl:w-[558.5px] lg:h-[400px] xl:h-[478.5px]"
         />
         <iconEtoile class="md:ml-3 md:mt-4 hidden sm:block" />
-        <iconEtoile2 class=" md:mt-2 hidden sm:block" />
+        <iconEtoile2 class="md:mt-2 hidden sm:block" />
 
         <div class="-ml-12 mt-20 sm:-ml-16 sm:mt-24 md:-ml-24 lg:-ml-32 lg:mt-48 xl:mt-60">
           <img
@@ -66,15 +66,13 @@ export default {
       <div
         class="w-[254px] sm:w-[320px] md:w-[400px] lg:w-[498px] text-[#515151] font-normal text-xs sm:text-sm md:text-base lg:text-lg mt-3 sm:mt-4 md:mt-5"
       >
-        Imaginez une carte qui vous ouvre les portes d'un monde de privilèges et d'avantages
-        exclusifs. La carte VEEP est votre clé pour profiter de vos passions et de vos loisirs comme
-        jamais auparavant.
+       {{ $t('imagineCard') }}
       </div>
       <div class="w-full sm:w-56 md:w-64 lg:w-72 h-12 mt-5 md:mt-8">
         <button
           class="bg-[#FF6B00] flex items-center justify-center gap-3 w-full h-12 rounded-full"
         >
-          <h1 class="text-white font-medium text-base">Obtenir ma carte VEEP</h1>
+          <h1 class="text-white font-medium text-base">{{ $t('get') }}</h1>
           <div class="flex justify-center bg-white w-8 h-8 lg:w-9 lg:h-9 rounded-full items-center">
             <iconLdirection class="w-4 h-4 lg:w-5 lg:h-5" />
           </div>

@@ -37,10 +37,12 @@ export default {
           <iconOrganize2 />
         </div>
         <div class="w-full h-auto font-normal text-xl lg:text-2xl text-center font-Bakbak">
-          Gestion simplifiée des tickets et accès
+          {{ $t('manage') }}
         </div>
-        <div class="w-full h-auto font-normal text-sm lg:text-base text-center mt-3 text-[#515151] mb-10">
-          Fluidifiez et sécurisez vos entrées grâce aux solutions de contrôle d’accès Veep
+        <div
+          class="w-full h-auto font-normal text-sm lg:text-base text-center mt-3 text-[#515151] mb-10"
+        >
+          {{ $t('security') }}
         </div>
       </div>
 
@@ -53,11 +55,13 @@ export default {
         >
           <iconOrganize3 />
         </div>
-        <div class="w-full h-auto font-normal text-xl lg:text-2xl text-center font-Bakbak ">
-          Paiements par carte bancaire et Mobile Money
+        <div class="w-full h-auto font-normal text-xl lg:text-2xl text-center font-Bakbak">
+           {{ $t('payment') }}
         </div>
-        <div class="w-full h-auto font-normal text-sm lg:text-base text-center mt-3 text-[#515151]  mb-10">
-          Dynamisez et suivez en temps réel vos ventes de tickets sur votre compte
+        <div
+          class="w-full h-auto font-normal text-sm lg:text-base text-center mt-3 text-[#515151] mb-10"
+        >
+            {{ $t('dynamic') }}
         </div>
       </div>
 
@@ -71,10 +75,12 @@ export default {
           <iconOrganize4 />
         </div>
         <div class="w-full h-auto font-normal text-xl lg:text-2xl text-center font-Bakbak">
-          Réduction des pertes et des fraudes au ticket
+           {{ $t('reduction') }}
         </div>
-        <div class="w-full h-auto font-normal text-sm lg:text-base text-center mt-3 text-[#515151]  mb-10">
-          Evitez la fraude sur vos événements grâce au contrôle d’accès sécurisé
+        <div
+          class="w-full h-auto font-normal text-sm lg:text-base text-center mt-3 text-[#515151] mb-10"
+        >
+          {{ $t('fraude') }}
         </div>
       </div>
     </div>

@@ -34,7 +34,7 @@ export default {
             class="absolute left-0 w-[500px] h-[300px] object-cover -mt-28"
           />
         </div>
-        <div class="w-60 h-10 font-Baloo font-bold text-4xl mx-auto">Félicitations !</div>
+        <div class="w-60 h-10 font-Baloo font-bold text-4xl mx-auto">{{ $t('congrat') }}</div>
         <div class="w-80 h-[87.36px] flex justify-center items-center ml-2 mt-3">
           <div>
             <div class="w-32 h-6 font-normal text-[#515151] mx-auto">Vous bénéficiez de</div>
@@ -46,7 +46,7 @@ export default {
         </div>
         <div class="w-80 h-[83.25px] mt-5 md:ml-2 mx-auto bg-[#FCF5EB] flex justify-between p-4 rounded-xl ">
           <div class="w-36 h-14">
-            <div class="w-full h-5 font-semibold text-sm">Vous gagnez</div>
+            <div class="w-full h-5 font-semibold text-sm">{{ $t('win') }}</div>
             <div class="w-full h-8 flex">
               <div class="w-24 text-[#FF6B00] font-Baloo font-bold text-3xl">12 000</div>
               <div class="w-10 h-4 font-medium text-sm mt-2 -ml-1">points</div>

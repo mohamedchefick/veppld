@@ -54,18 +54,18 @@ export default {
         <div
           class="w-full md:w-[597.75px] h-11 font-medium text-2xl text-white flex justify-center"
         >
-          On attend que vous !!!
+         {{ $t('wait') }}
         </div>
         <div
           class="w-full md:w-[541.5px] h-auto font-bold text-3xl md:text-5xl font-Baloo text-white mt-4 md:mt-0 text-center m-auto"
         >
-          N’est t-il pas temps de créer un évènement ?
+          {{ $t('create') }}
         </div>
         <div class="mt-8 md:mt-6 flex justify-center">
           <button
             class="w-[300px] h-[50px] rounded-full flex justify-center items-center gap-20 bg-white text-black font-medium text-base"
           >
-            Créer un évènement
+            {{ $t('createVeep') }}
             <div class="flex justify-center bg-[#FF6B00] w-9 h-9 rounded-full items-center">
               <iconLdirection class="w-4 h-4 md:w-5 md:h-5" />
             </div>

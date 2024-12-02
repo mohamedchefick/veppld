@@ -28,10 +28,10 @@ export default {
           <div
             class="font-Baloo font-extrabold text-3xl sm:text-4xl lg:text-5xl mx-auto lg:mx-0 lg:w-[495.75px] lg:h-24 mt-5 p-2 md:p-0"
           >
-            Suivez vos événements partout
+            {{ $t('followEvenement') }}
           </div>
           <div class="font-normal text-base lg:text-lg mx-auto lg:mx-0 lg:w-[436.5px] lg:h-14 mt-5">
-            Accédez à vos événements en un clin d'œil directement dans votre poche
+            {{ $t('accesEvenement') }}
           </div>
           <div class="flex gap-3 justify-center lg:justify-start mt-5">
             <iconGoogleplay class="w-36 md:w-40 lg:w-44 h-12 md:h-14" />

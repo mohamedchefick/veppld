@@ -26,7 +26,7 @@ export default {
           <div
             class="font-Baloo font-extrabold text-3xl sm:text-4xl lg:text-5xl mx-auto lg:mx-0 lg:w-[453px] lg:h-32"
           >
-            Suivez vos points avec l’App Veep
+            {{ $t('suivi') }}
           </div>
           <div class="flex gap-3 justify-center lg:justify-start mt-5">
             <iconGoogleplay class="w-36 md:w-40 lg:w-44 h-12 md:h-14" />

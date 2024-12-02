@@ -23,25 +23,24 @@ export default {
               <button
                 class="bg-gradient-to-r from-[#999999] to-[#FFFFFF] rounded-full w-48 h-10 font-normal text-sm md:text-base text-white border border-white"
               >
-                Pendant l’évènement
+                {{ $t('duringEvenement') }}
               </button>
             </div>
             <div
               class="w-full md:w-[375px] h-auto md:h-[75px] font-bold text-2xl md:text-3xl font-Baloo text-white mt-5 text-center md:text-start"
             >
-              Gestion de campagne marketing
+              {{ $t('manageCampagn') }}
             </div>
             <div
               class="w-full md:w-[362.25px] h-auto md:h-[99px] font-normal text-sm md:text-base text-white mt-5 text-center md:text-start"
             >
-              Boostez la visibilité autour de votre événement et attirez davantage de participants
-              avec nos outils marketing inbound efficaces et percutantes.
+               {{ $t('boostCampagn') }}
             </div>
             <div class="w-[235.25px] h-auto mt-3 md:mt-4 m-auto md:m-0">
               <button
                 class="bg-[#FF6B00] flex items-center justify-center gap-4 md:gap-10 w-full md:w-[235.25px] h-[50.25px] rounded-full m-auto"
               >
-                <h1 class="text-white font-medium text-sm md:text-base">Accéder à l’espace</h1>
+                <h1 class="text-white font-medium text-sm md:text-base">{{ $t('access') }}</h1>
                 <div
                   class="flex justify-center bg-white w-6 h-6 md:w-8 md:h-8 lg:w-9 lg:h-9 rounded-full items-center"
                 >
@@ -54,7 +53,7 @@ export default {
             <img
               :src="IMGcampagn1"
               alt="IMGcampagn1"
-              class="h-auto w-[215.66px] md:h-[366.71px] md:w-[455.66px] absolute -mt-10 ml-44  "
+              class="h-auto w-[215.66px] md:h-[366.71px] md:w-[455.66px] absolute -mt-10 ml-44"
             />
             <img
               :src="IMGcampagn2"

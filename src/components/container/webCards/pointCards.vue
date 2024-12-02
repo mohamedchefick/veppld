@@ -4,10 +4,9 @@ import IMGpoint1 from '@/assets/images/img_point1.webp'
 import IMGpoint2 from '@/assets/images/img_point2.webp'
 import iconLdirection from '@/assets/icons/iconLdirection.vue'
 
-
 export default {
   name: 'the-heroCards',
-  components: { iconJaune,iconLdirection },
+  components: { iconJaune, iconLdirection },
   data() {
     return { IMGpoint1, IMGpoint2 }
   }
@@ -28,23 +27,21 @@ export default {
           <span class="text-[#FF6B00] font-extrabold">points qui</span> vous feront
           <span class="text-[#FF6B00] font-extrabold">tourner la tête</span>
           <div class="w-full flex justify-end">
-            <iconJaune class="mt-3 mr-0 md:mr-20 " />
+            <iconJaune class="mt-3 mr-0 md:mr-20" />
           </div>
         </div>
 
         <div
           class="text-[#E6E6E6] font-normal text-base w-full md:w-[498px] mt-5 md:mt-0 2xl:mr-20 text-center md:text-start"
         >
-          Grâce à la carte VEEP, chaque achat ou participation à un événement vous permet
-          d'accumuler des points rapidement et facilement. Profitez ensuite de récompenses
-          exclusives chez nos partenaires.
+          {{ $t('buyVeep') }}
         </div>
       </div>
       <div class="block md:hidden flex justify-center mt-5">
         <button
           class="bg-[#FF6B00] flex items-center justify-center gap-3 w-[252.5px] h-12 rounded-full"
         >
-          <h1 class="text-white font-medium text-base">Obtenir ma carte VEEP</h1>
+          <h1 class="text-white font-medium text-base">{{ $t('get') }}</h1>
           <div class="flex justify-center bg-white w-8 h-8 lg:w-9 lg:h-9 rounded-full items-center">
             <iconLdirection class="w-4 h-4 lg:w-5 lg:h-5" />
           </div>
@@ -67,9 +64,7 @@ export default {
           <div
             class="font-normal text-base font-Baloo text-white mt-4 md:mt-8 text-center md:text-left"
           >
-            Accumulez des points chaque fois que vous payez dans nos restaurants et commerces
-            partenaires. Chaque achat vous rapporte des points que vous pouvez échanger contre des
-            récompenses.
+            {{ $t('accumulVeep') }}
           </div>
         </div>
 
@@ -85,8 +80,7 @@ export default {
           <div
             class="font-normal text-base font-Baloo text-white mt-4 md:mt-8 text-center md:text-left"
           >
-            Profitez de votre événement préféré tout en gagnant des points. Plus vous gagnez des
-            points, plus vous bénéficiez de gros avantages.
+             {{ $t('profitVeep') }}
           </div>
         </div>
       </div>

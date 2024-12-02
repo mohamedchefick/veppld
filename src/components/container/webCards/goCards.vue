@@ -32,19 +32,19 @@ export default {
   >
     <div class="block md:hidden m-auto px-5 mt-10">
       <div class="w-full md:w-[597.75px] h-11 font-medium text-2xl text-white flex justify-center">
-        Let’s go !!!
+        {{ $t('letGo') }}
       </div>
       <div
         class="w-full md:w-[541.5px] h-auto font-bold text-3xl md:text-5xl font-Baloo text-white mt-4 md:mt-0 text-center"
       >
-        Obtenez votre carte VEEP maintenant !
+        {{ $t('getVeep') }}
       </div>
       <div class="mt-8 md:mt-16 flex justify-center">
         <button
           @click="openPopup"
           class="w-[316.5px] h-[50px] rounded-full flex justify-center items-center gap-5 bg-white text-black font-medium text-base"
         >
-          Commander votre carte VEEP
+          {{ $t('commandVeep') }}
           <div class="flex justify-center bg-[#FF6B00] w-9 h-9 rounded-full items-center">
             <iconLdirection class="w-4 h-4 md:w-5 md:h-5" />
           </div>
@@ -63,14 +63,14 @@ export default {
         <div
           class="w-full md:w-[541.5px] h-auto font-bold text-3xl md:text-5xl font-Baloo text-white mt-4 md:mt-0"
         >
-          Obtenez votre carte VEEP maintenant !
+          {{ $t('getVeep') }}
         </div>
         <div class="mt-8 md:mt-16">
           <button
             @click="openPopup"
             class="w-60 md:w-72 h-[50px] rounded-full flex justify-center items-center gap-5 bg-white text-black font-medium text-base"
           >
-            Commander votre carte VEEP
+            {{ $t('commandVeep') }}
             <div class="flex justify-center bg-[#FF6B00] w-9 h-9 rounded-full items-center">
               <iconLdirection class="w-4 h-4 md:w-5 md:h-5" />
             </div>

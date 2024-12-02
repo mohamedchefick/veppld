@@ -15,26 +15,26 @@ export default {
 
 <template>
   <div class="py-5 px-5 sm:px-8 md:px-16 lg:px-32 xl:px-36 2xl:px-56">
-    <div class="w-full md:h-[513.75px] 2xl:h-[650px] rounded-3xl bg-[#FEF9F2] mt-8 relative overflow-hidden">
+    <div
+      class="w-full md:h-[513.75px] 2xl:h-[650px] rounded-3xl bg-[#FEF9F2] mt-8 relative overflow-hidden"
+    >
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 items-center mt-10">
         <!-- Right Section mobile -->
         <div class="block md:hidden text-center">
           <button
             class="px-6 py-2 text-[#38B4B4] font-medium text-sm md:text-base bg-[#38B4B412] rounded-full"
           >
-            Avant l’évènement
+            {{ $t('beforeEvenement') }}
           </button>
-          <h2 class="text-2xl md:text-3xl font-bold mt-4">Gestion d’équipes</h2>
+          <h2 class="text-2xl md:text-3xl font-bold mt-4">{{ $t('manageTeam') }}</h2>
           <p class="text-sm md:text-base mt-3 max-w-sm mx-auto md:mx-0 p-2">
-            Fini le casse-tête des recrutements, de l’édition des plannings et de l’affectation des
-            équipes. Veep prend en charge toute cette organisation en quelques clics seulement, vous
-            assurant sérénité et gain de temps.
+            {{ $t('planing') }}
           </p>
           <div class="mt-6 flex justify-center md:justify-start">
             <button
               class="bg-[#FF6B00] flex items-center justify-center gap-4 px-6 py-3 rounded-full text-white font-medium"
             >
-              <span>Accéder à l’espace</span>
+              <span> {{ $t('access') }}</span>
               <div
                 class="flex justify-center bg-white w-6 h-6 md:w-8 md:h-8 rounded-full items-center"
               >
@@ -62,7 +62,11 @@ export default {
               <iconManage1 class="w-5 h-5 mt-1 ml-3 hidden md:block" />
             </div>
           </div>
-            <img :src="IMGManage2" alt="IMGcard" class="rounded-lg w-[441.75px] h-[299.04px] 2xl:w-full 2xl:h-auto" />
+          <img
+            :src="IMGManage2"
+            alt="IMGcard"
+            class="rounded-lg w-[441.75px] h-[299.04px] 2xl:w-full 2xl:h-auto"
+          />
           <iconManageleeds class="mt-1 md:mr-80 mr-64" />
         </div>
         <!-- Right Section -->
@@ -70,19 +74,17 @@ export default {
           <button
             class="px-6 py-2 text-[#38B4B4] font-medium text-sm md:text-base bg-[#38B4B412] rounded-full"
           >
-            Avant l’évènement
+            {{ $t('beforeEvenement') }}
           </button>
-          <h2 class="text-2xl md:text-3xl font-bold mt-2">Gestion d’équipes</h2>
+          <h2 class="text-2xl md:text-3xl font-bold mt-2">{{ $t('manageTeam') }}</h2>
           <p class="text-sm md:text-base mt-1 max-w-sm mx-auto md:mx-0">
-            Fini le casse-tête des recrutements, de l’édition des plannings et de l’affectation des
-            équipes. Veep prend en charge toute cette organisation en quelques clics seulement, vous
-            assurant sérénité et gain de temps.
+            {{ $t('planing') }}
           </p>
           <div class="mt-3 flex justify-center md:justify-start">
             <button
-              class="bg-[#FF6B00] flex items-center justify-center gap-4 px-6 py-3 rounded-full text-white font-medium "
+              class="bg-[#FF6B00] flex items-center justify-center gap-4 px-6 py-3 rounded-full text-white font-medium"
             >
-              <span>Accéder à l’espace</span>
+              <span>{{ $t('access') }}</span>
               <div
                 class="flex justify-center bg-white w-6 h-6 md:w-8 md:h-8 rounded-full items-center"
               >
