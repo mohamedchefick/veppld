@@ -20,12 +20,12 @@
     </div>
 
 <!-- Popup -->
-<div v-if="showPopup" class="fixed h-screen inset-0 bg-white flex justify-center items-center z-50">
+<div v-if="showPopup" class="fixed h-screen inset-0 bg-white flex justify-center items-center z-50 pb-32">
   <div class="bg-white rounded-lg p-5 max-w-full h-auto overflow-auto flex flex-col justify-center items-center mb-20">
     <div class="mb-20">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-10 w-10 text-black cursor-pointer bg-[#38B4B41A] rounded-full p-1"
+        class="h-10 w-10 text-black cursor-pointer bg-[#38B4B41A] rounded-full p-2"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -44,7 +44,7 @@
         :key="index" 
         class="border-[#E3E6F2] border-2 flex flex-col justify-center items-center w-full h-[96.49px] md:w-[91.5px] md:h-[84px] rounded-xl 2xl:h-[100px] hover:bg-[#38B4B4] duration-300 hover:border-[#38B4B4] hover:text-white"
       >
-        <component :is="activity.icon" class="mx-auto icon-hover" />
+        <component :is="activity.icon" class="mx-auto icon-hover mb-2" />
         <div class="text-center text-xs font-semibold w-full md:max-w-[91.5px] md:overflow-visible md:whitespace-normal md:text-clip ps-1">
           {{ activity.name }}
         </div>
