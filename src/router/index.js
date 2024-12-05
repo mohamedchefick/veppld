@@ -1,11 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/home/index.vue'
+import DetailsEvents from '../views/detailsEvents/index.vue'
+import Seconddetailsevents from '../views/seconddetailsevents/index.vue'
+import Thirddetailsevents from '../views/thirddetailsevents/index.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/detailsevents',
+    name: 'detailsevents',
+    component: DetailsEvents
+  },
+  {
+    path: '/seconddetailsevents',
+    name: 'seconddetailsevents',
+    component: Seconddetailsevents
+  },
+  {
+    path: '/thirddetailsevents',
+    name: 'thirddetailsevents',
+    component: Thirddetailsevents
   },
   {
     path: '/:pathMatch(.*)*',

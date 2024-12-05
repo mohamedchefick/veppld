@@ -9,6 +9,8 @@ import App from './App.vue'
 import router from './router'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+// import { VueSvgIconPlugin } from '@yzfe/vue-svgicon'
+// import '@yzfe/svgicon/lib/svgicon.css'
 
 AOS.init()
 const pinia = createPinia()
@@ -20,5 +22,6 @@ app.use(i18n)
 app.use(pinia)
 pinia.use(piniaPersist)
 app.use(vClickOutside)
+// app.use(VueSvgIconPlugin, {tagName: 'icon'})
 
 app.mount('#app')

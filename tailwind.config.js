@@ -11,10 +11,7 @@ export default {
     fontSize,
     extend: {
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
-        urbanist: ['Urbanist', 'sans-serif'],
-        dmSans: ['DM Sans', 'sans-serif'],
-        Pacifico: ['Pacifico', 'cursive']
+        Baloo: ['Baloo 2', 'sans-serif'],
       },
       colors: {
         bluePrincipal: '#5F01D3'
