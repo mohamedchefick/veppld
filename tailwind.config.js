@@ -12,6 +12,8 @@ export default {
     extend: {
       fontFamily: {
         Baloo: ['Baloo 2', 'sans-serif'],
+        Bakbak :['Bakbak One']
+
       },
       colors: {
         bluePrincipal: '#5F01D3'

@@ -1,10 +1,10 @@
 <script>
 // import IconLogo from '@/assets/icons/IconLogo.vue';
-import IconGoUp from '@/assets/icons/IconGoUp.vue';
-import iconOrganiz from '@/assets/icons/iconOrganiz.vue';
-import iconVerificat from '@/assets/icons/iconVerificat.vue';
-import iconCarte from '@/assets/icons/iconCarte.vue';
-import SvgIcon from '../add/SvgIcon.vue';
+import IconGoUp from '@/assets/icons/IconGoUp.vue'
+import iconOrganiz from '@/assets/icons/iconOrganiz.vue'
+import iconVerificat from '@/assets/icons/iconVerificat.vue'
+import iconCarte from '@/assets/icons/iconCarte.vue'
+import SvgIcon from '../add/SvgIcon.vue'
 import IMGLogo from '@/assets/images/IMGveepLogo.webp'
 
 export default {
@@ -14,35 +14,48 @@ export default {
     SvgIcon,
     iconOrganiz,
     iconVerificat,
-    iconCarte,
+    iconCarte
   },
   data() {
     return {
       isMenu: false, // État pour contrôler l'affichage du menu mobile
-      images:{IMGLogo}
-    };
+      images: { IMGLogo }
+    }
   },
   methods: {
     toggleMenu() {
-      this.isMenu = !this.isMenu; // Alterne l'affichage du menu mobile
+      this.isMenu = !this.isMenu // Alterne l'affichage du menu mobile
     },
-  },
-};
-</script>
+    Organisateurs() {
+      this.$router.push({ name: 'webOrganizer' }) // Remplace par le nom de ta route
+    },
 
+    verification() {
+      this.$router.push({ name: 'webTicket' }) // Remplace par le nom de ta route
+    },
+    carte() {
+      this.$router.push({ name: 'webCards' }) // Remplace par le nom de ta route
+    }
+  }
+}
+</script>
 
 <template>
   <main>
     <!-- Barre de navigation principale -->
     <div
       v-if="!isMenu"
+      class="bg-white/70 backdrop-blur-lg flex justify-between items-center py-5 px-5 sm:px-8 md:px-16 lg:px-32 xl:px-36 2xl:px-56"
+    >
+      <!-- Logo (gauche) -->
+      <div class="cursor-pointer" @click="openHome">
+        <img :src="images.IMGLogo" class="w-32" alt="" />
       class="bg-white/70 backdrop-blur-lg flex justify-between items-center lg:py- px-5 sm:px-8 md:px-16 lg:px-32 xl:px-36 2xl:px-56">
       <!-- Logo (gauche) -->
         <div class="cursor-pointer" @click="openHome">
           <router-link to="/">
         <img :src="images.IMGLogo" class="w-24" alt="">
       </router-link>
-
       </div>
 
       <!-- Icône Burger (visible uniquement sur petits écrans) -->
@@ -55,11 +68,7 @@ export default {
           stroke="currentColor"
           stroke-width="2"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </div>
 
@@ -68,22 +77,22 @@ export default {
         class="hidden md:flex items-center font-medium gap-3 xl:text-base 2xl:text-xl text-black"
       >
         <div
-          class="font-normal text-sm sm:text-base  2xl:text-2xl cursor-pointer flex items-center gap-2  hover:bg-[#FBE4D680] lg:py-2 lg:px-4 rounded-lg"
-          @click="scrollTo('faq')"
+          class="font-normal text-sm sm:text-base 2xl:text-2xl cursor-pointer flex items-center gap-2 hover:bg-[#FBE4D680] lg:py-2 lg:px-4 rounded-lg"
+          @click="carte"
         >
           <iconCarte icon-name="iconCarte" class="w-4 sm:w-5" />
           {{ $t('La Carte VEEP') }}
         </div>
         <div
-          class="font-normal text-sm sm:text-base  2xl:text-2xl cursor-pointer flex items-center gap-2 hover:bg-[#FBE4D680] lg:py-2 lg:px-4 rounded-lg"
-          @click="contact"
+          class="font-normal text-sm sm:text-base 2xl:text-2xl cursor-pointer flex items-center gap-2 hover:bg-[#FBE4D680] lg:py-2 lg:px-4 rounded-lg"
+          @click="verification"
         >
           <iconVerificat icon-name="iconCarte" class="w-4 sm:w-5" />
           {{ $t('Vérifier un billet') }}
         </div>
         <div
-          class="font-normal text-sm sm:text-base  2xl:text-2xl cursor-pointer flex items-center gap-2 hover:bg-[#FBE4D680] lg:py-2 lg:px-4 rounded-lg"
-          @click="contact"
+          class="font-normal text-sm sm:text-base 2xl:text-2xl cursor-pointer flex items-center gap-2 hover:bg-[#FBE4D680] lg:py-2 lg:px-4 rounded-lg"
+          @click="Organisateurs"
         >
           <iconOrganiz icon-name="iconCarte" class="w-4 sm:w-5" />
           {{ $t('Organisateurs') }}
@@ -94,7 +103,7 @@ export default {
     <!-- Menu Mobile (visible uniquement lorsque isMenu est true) -->
     <div v-if="isMenu" class="absolute w-full h-screen bg-white z-50 pt-32">
       <div class="flex justify-center items-center p-5">
-        <SvgIcon icon-name="IconMenu" class="w-4 text-black" color=""  @click="openHome" />
+        <SvgIcon icon-name="IconMenu" class="w-4 text-black" color="" @click="openHome" />
         <!-- Bouton pour fermer le menu -->
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -105,24 +114,20 @@ export default {
           stroke-width="2"
           @click="toggleMenu"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M6 18L18 6M6 6l12 12"
-          />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </div>
       <!-- Liens de navigation pour mobile -->
       <div class="flex flex-col justify-center items-center p-5 space-y-5 text-black text-xl">
-        <div @click="scrollTo('faq')" class="cursor-pointer flex items-center gap-3">
+        <div @click="carte" class="cursor-pointer flex items-center gap-3">
           <iconCarte icon-name="iconCarte" class="w-4 sm:w-5" />
           {{ $t('La Carte VEEP') }}
         </div>
-        <div @click="contact" class="cursor-pointer flex items-center gap-3">
+        <div @click="verification" class="cursor-pointer flex items-center gap-3">
           <iconVerificat icon-name="iconCarte" class="w-4 sm:w-5" />
           {{ $t('Vérifier un billet') }}
         </div>
-        <div @click="contact" class="cursor-pointer flex items-center gap-3">
+        <div @click="Organisateurs" class="cursor-pointer flex items-center gap-3">
           <iconOrganiz icon-name="iconCarte" class="w-4 sm:w-5" />
           {{ $t('Organisateurs') }}
         </div>
