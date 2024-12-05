@@ -36,10 +36,13 @@ export default {
     <!-- Barre de navigation principale -->
     <div
       v-if="!isMenu"
-      class="bg-white/70 backdrop-blur-lg flex justify-between items-center py-5 px-5 sm:px-8 md:px-16 lg:px-32 xl:px-36 2xl:px-56"    >
+      class="bg-white/70 backdrop-blur-lg flex justify-between items-center lg:py- px-5 sm:px-8 md:px-16 lg:px-32 xl:px-36 2xl:px-56">
       <!-- Logo (gauche) -->
-      <div class="cursor-pointer" @click="openHome">
-        <img :src="images.IMGLogo" class="w-32" alt="">
+        <div class="cursor-pointer" @click="openHome">
+          <router-link to="/">
+        <img :src="images.IMGLogo" class="w-24" alt="">
+      </router-link>
+
       </div>
 
       <!-- Icône Burger (visible uniquement sur petits écrans) -->
