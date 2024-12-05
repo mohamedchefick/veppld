@@ -6,12 +6,8 @@ import webOrganizer from '../views/webOrganizer/index.vue'
 import webTicket from '../views/webTicket/index.vue'
 import webCongratulation from '../views/webCongratulation/index.vue'
 import DetailsTickets from '../views/detailsTickets/index.vue'
-
-
-
-
-
-
+import Seconddetailsevents from '../views/seconddetailsevents/index.vue'
+import Thirddetailsevents from '../views/thirddetailsevents/index.vue'
 
 const routes = [
   {
@@ -48,7 +44,15 @@ const routes = [
   {
     path: '/detailsTickets',
     name: 'detailsTickets',
-    component: DetailsTickets
+    component: DetailsTickets,
+    path: '/seconddetailsevents',
+    name: 'seconddetailsevents',
+    component: Seconddetailsevents
+  },
+  {
+    path: '/thirddetailsevents',
+    name: 'thirddetailsevents',
+    component: Thirddetailsevents
   },
   {
     path: '/:pathMatch(.*)*',
