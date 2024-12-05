@@ -27,7 +27,7 @@ export default {
               </button>
             </div>
             <div
-              class="w-full md:w-[375px] h-auto md:h-[75px] font-bold text-2xl md:text-3xl font-Baloo text-white mt-5 text-center md:text-start"
+              class="w-full md:w-[375px] h-auto  2xl:w-full font-bold text-2xl md:text-3xl font-Baloo text-white mt-5 text-center md:text-start"
             >
               {{ $t('manageCampagn') }}
             </div>

@@ -43,7 +43,7 @@ export default {
         {{ $t('getCards') }}
       </div>
     </div>
-    <div class="flex flex-col md:flex-row justify-center items-center">
+    <div class="flex flex-col md:flex-row justify-center items-center xl:mt-10">
       <!-- Conteneur à droite-->
       <div class="hidden md:flex items-center md:relative 2xl:-mt-40 mr-40">
         <iconApl1 class="w-full" />

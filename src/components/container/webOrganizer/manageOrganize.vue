@@ -18,7 +18,7 @@ export default {
     <div
       class="w-full md:h-[513.75px] 2xl:h-[650px] rounded-3xl bg-[#FEF9F2] mt-8 relative overflow-hidden"
     >
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 items-center mt-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 items-center mt-10 2xl:mt-5">
         <!-- Right Section mobile -->
         <div class="block md:hidden text-center">
           <button
@@ -77,7 +77,7 @@ export default {
             {{ $t('beforeEvenement') }}
           </button>
           <h2 class="text-2xl md:text-3xl font-bold mt-2">{{ $t('manageTeam') }}</h2>
-          <p class="text-sm md:text-base mt-1 max-w-sm mx-auto md:mx-0">
+          <p class="text-sm md:text-base mt-1 max-w-sm mx-auto md:mx-0 2xl:max-w-lg">
             {{ $t('planing') }}
           </p>
           <div class="mt-3 flex justify-center md:justify-start">

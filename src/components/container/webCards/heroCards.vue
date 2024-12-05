@@ -51,7 +51,7 @@ export default {
     <!-- Titre principal et barre de recherche -->
     <div>
       <div
-        class="text-5xl sm:text-6xl md:text-5xl lg:text-7xl 2xl:text-8xl mx-auto text-center py-6 2xl:pt-24 sm:pt-16 font-extrabold text-black w-11/12 md:w-4/6"
+        class="text-5xl sm:text-6xl lg:text-[69px] 2xl:text-[69px] mx-auto text-center xl:w-[684px] xl:h-[196px] font-extrabold md:mt-20"
       >
         Votre Passeport pour des
         <span class="text-[#FF6B00] font-extrabold">Expériences Inoubliables</span>
@@ -124,7 +124,7 @@ export default {
         <div class="-left-4 hidden">
           <!-- <iconFire class="md:w-10 lg:w-20" /> -->
         </div>
-        <iconLeeds class="w-full" />
+        <iconLeeds class="w-full xl:-ml-10 2xl:-ml-0 mb-56" />
       </div>
     </div>
   </div>

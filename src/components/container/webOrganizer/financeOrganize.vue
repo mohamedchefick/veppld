@@ -45,7 +45,7 @@ export default {
           <h2 class="text-3xl md:text-2xl lg:text-3xl font-bold mt-3 md:mt-4">
             {{ $t('pointFinance') }}
           </h2>
-          <p class="text-sm md:text-base mt-2 md:mt-3 max-w-xs mx-auto md:mx-0">
+          <p class="text-sm md:text-base mt-2 md:mt-3 max-w-xs 2xl:max-w-lg mx-auto md:mx-0">
             {{ $t('visualizeFinance') }}
           </p>
           <div class="mt-4 flex justify-center md:justify-start">

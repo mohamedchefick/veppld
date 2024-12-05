@@ -27,12 +27,12 @@ export default {
               </button>
             </div>
             <div
-              class="w-full md:w-[375px] h-auto md:h-[75px] font-bold text-2xl md:text-3xl font-Baloo text-white mt-5 text-center md:text-start"
+              class="w-full md:w-[375px] h-auto md:h-[75px] 2xl:w-full font-bold text-2xl md:text-3xl font-Baloo text-white mt-5 text-center md:text-start"
             >
               {{ $t('controlEvenement') }}
             </div>
             <div
-              class="w-full md:w-[362.25px] h-auto md:h-[99px] font-normal text-sm md:text-base text-white mt-5 text-center md:text-start"
+              class="w-full md:w-[362.25px] h-auto md:h-[99px] 2xl:w-full font-normal text-sm md:text-base text-white mt-5 text-center md:text-start"
             >
               {{ $t('veepEvenement') }}
             </div>

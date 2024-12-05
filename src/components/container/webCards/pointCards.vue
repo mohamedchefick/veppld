@@ -32,7 +32,7 @@ export default {
         </div>
 
         <div
-          class="text-[#E6E6E6] font-normal text-base w-full md:w-[498px] mt-5 md:mt-0 2xl:mr-20 text-center md:text-start"
+          class="text-[#E6E6E6] font-normal text-base w-full md:w-[498px] mt-5 md:mt-0 2xl:mr-40 text-center md:text-start"
         >
           {{ $t('buyVeep') }}
         </div>
@@ -53,16 +53,16 @@ export default {
         class="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0 h-auto mt-14 gap-10"
       >
         <!-- Card 1 -->
-        <div class="w-full md:w-[498px]">
-          <img :src="IMGpoint1" alt="IMG Point1" class="mx-auto md:mx-0" />
+        <div class="w-full md:w-[498px] ">
+          <img :src="IMGpoint1" alt="IMG Point1" class="mx-auto md:mx-0 -mt-7" />
           <div
-            class="font-extrabold text-2xl md:text-3xl font-Baloo text-white mt-8 text-center md:text-left"
+            class="font-extrabold text-2xl md:text-3xl font-Baloo text-white text-center md:text-left mt-8"
           >
             Dans les
             <span class="text-[#FFE4BF] font-extrabold">restaurants</span> partenaires
           </div>
           <div
-            class="font-normal text-base font-Baloo text-white mt-4 md:mt-8 text-center md:text-left"
+            class="font-normal text-base font-Baloo text-white mt-4 md:mt-8 text-center md:text-left xl:w-3/4"
           >
             {{ $t('accumulVeep') }}
           </div>
@@ -70,7 +70,7 @@ export default {
 
         <!-- Card 2 -->
         <div class="w-full md:w-[498px] mx-auto">
-          <img :src="IMGpoint2" alt="IMG Point2" class="mx-auto md:mx-0" />
+          <img :src="IMGpoint2" alt="IMG Point2" class="mx-auto md:mx-0 -mt-16" />
           <div
             class="font-extrabold text-2xl md:text-3xl font-Baloo text-white mt-8 text-center md:text-left"
           >

@@ -22,7 +22,7 @@ export default {
 
 <template>
   <div
-    class="flex flex-col md:flex-row justify-between items-center py-5 px-5 sm:px-8 md:px-12 lg:px-24 xl:px-32 2xl:px-48 pt-24 oneDiv relative md:gap-16 lg:gap-32"
+    class="flex flex-col md:flex-row justify-between items-center py-5 px-5 sm:px-8 md:px-12 lg:px-24 xl:px-32 2xl:px-48 pt-24 oneDiv relative md:gap-16 xl:gap-16 2xl:gap-36"
   >
     <div class="md:w-1/2 relative mb-8 md:mb-0 justify-center md:justify-start">
       <!-- titre visible uniquement sur mobile -->
@@ -40,7 +40,7 @@ export default {
         <img
           :src="IMGLife"
           alt="IMGcard"
-          class="w-72 ml- md:ml-4 h-48 sm:w-56 sm:h-56 lg:w-[400px] xl:w-[558.5px] lg:h-[400px] xl:h-[478.5px]"
+          class="w-72 ml- md:ml-4 h-48 sm:w-56 sm:h-56 lg:w-[400px] xl:w-[478.5px] 2xl:w-[558.5px] lg:h-[400px] xl:h-[478.5px]"
         />
         <iconEtoile class="md:ml-3 md:mt-4 hidden sm:block" />
         <iconEtoile2 class="md:mt-2 hidden sm:block" />

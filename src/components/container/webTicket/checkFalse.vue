@@ -74,7 +74,9 @@ export default {
           <img class="w-[60.95px] h-[51px]" :src="IMGcheck1" alt="IMGgirls" />
         </div>
         <div class="w-56">
-          <div class="w-full h-5 font-Baloo font-bold text-[28px] -mt-2">Festi Chill 2023</div>
+          <div class="w-full h-5 font-Baloo font-bold text-[28px] -mt-2 text-[#0F0F4C]">
+            Festi Chill 2023
+          </div>
           <div class="w-full mt-6 font-medium text-xs flex gap-1">
             <iconValid icon-name="iconSearch" class="" />
             Cotonou, Canal Olympia, Gbèjromèdé

@@ -54,7 +54,7 @@ export default {
   <div class="py-5 px-5 sm:px-16 md:px-28 lg:px-44 xl:px-48 2xl:px-64 pt-24 oneDiv">
     <div class="flex justify-center">
       <div
-        class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl w-full md:w-[400px] lg:w-[597.75px] text-[#303030] font-Baloo text-center"
+        class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl w-full xl:w-[597.75px] lg:w-[597.75px] xl:h-[156px] text-[#303030] font-Baloo text-center"
       >
         Avec des
         <span class="text-[#FF6B00] font-bold font-Baloo">privilèges exclusifs</span> de votre carte
